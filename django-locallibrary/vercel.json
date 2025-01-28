@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "locallibrary/wsgi.py",
+        "src": "django-locallibrary/locallibrary/wsgi.py",
         "use": "@vercel/python",
         "config": { "runtime": "python3.12.3" }
       }
@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "locallibrary/wsgi.py"
+        "dest": "django-locallibrary/locallibrary/wsgi.py"
       }
     ]
 }
